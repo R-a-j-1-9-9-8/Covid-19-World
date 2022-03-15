@@ -128,7 +128,6 @@ ON c.Continent=t.continent
 Select SUM(new_cases) as total_cases, SUM(cast(new_deaths as int)) as total_deaths, SUM(cast(new_deaths as int))/SUM(New_Cases)*100 as DeathPercentage
 From CovidData..CovidDeaths
 where continent is not null 
-order by 1,2
 
 
 -- Creating View to store data for later visualizations
